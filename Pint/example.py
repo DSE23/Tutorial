@@ -42,3 +42,13 @@ print("L =", L) # print the result
 
 L_mag = L.magnitude # Get the magnitude of L
 print("\nMagnnitude of L=", L_mag) # Print the result
+
+## EXAMPLE 4: ASSIGING A UNIT USING A STRING EXPRESSION
+## You can also assign a value and unit by typing them as a string
+## Use Q_(<USER STRING>) function
+
+I_XX = Q_("2457 mm**4") # To have for instance the 4th power, use the python expression **4
+I_YY = Q_("0.002 m**4")
+
+print("\nI_XX=", I_XX)
+print("I_yy=", I_YY)
