@@ -12,7 +12,7 @@ Created on Mon Jun  4 16:42:21 2018
 
 from pint import UnitRegistry
 
-unit = UnitRegistry() # Initialise the unit module
+ureg = UnitRegistry() # Initialise the unit module
 
 ## EXAMPLE 1: ASSIGNING A UNIT TO A VALUE
 
@@ -21,7 +21,7 @@ L = 1.234 # Length variable with unassigned unit
 print("Before assigning unit:")
 print("L =", L) # Print the vaLue of L
 
-L *= unit.meter # Assign the unit meter to L
+L *= ureg.meter # Assign the unit meter to L
 
 print("\nAfter assigning unit:")
 print("L =", L) # Print the result
@@ -31,7 +31,7 @@ print("L =", L) # Print the result
 ## which is expressed in meters
 ## to inch
 
-L.ito(unit.inch) # Convert L to inch
+L.ito(ureg.inch) # Convert L to inch
 print("\nAfter conversion")
 print("L =", L) # print the result
 
