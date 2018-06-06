@@ -60,3 +60,13 @@ I_YY = Q_("0.002 m**4")
 
 print("\n I_XX=", I_XX)
 print("I_yy=", I_YY)
+
+## EXAMPLE 5: CONVERTING UNITS USING STRING EXPRESSION
+## FOR COMPOUND UNITS A STRING EXPRESSION IS OFTEN USEFUL
+## FOR THE CONVERSION:
+
+I_ZZ = Q_("84.4 lbf*inch*s**2")
+print("\n Before conversion: Izz=", I_ZZ)
+
+I_ZZ.ito(ureg("kg*m**2"))
+print("After conversion: Izz=", I_ZZ)
